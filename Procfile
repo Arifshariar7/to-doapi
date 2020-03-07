@@ -1,1 +1,3 @@
-web: gunicorn todoapi.wsgi --pythonpath=movies --log-file -
+web: gunicorn to-doapi.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
