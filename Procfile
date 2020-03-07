@@ -1,1 +1,1 @@
-web: gunicorn to-doapi.wsgi --log-file -
+web: gunicorn to-doapi.todoapi.todoapi.wsgi.py --log-file -
